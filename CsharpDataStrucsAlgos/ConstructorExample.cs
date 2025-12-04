@@ -8,7 +8,13 @@ public class ConstructorExample: ConstructorBaseExample {
 
     public readonly int intField;
     public static readonly int readonlyIntField;
-    public ConstructorExample() { }
+    public const int constIntField = 100;
+    public ConstructorExample() {
+        // This will cause a compile-time error
+        // because const fields cannot be assigned a value outside their declaration.
+
+        //constIntField = 20; 
+    }
 
     static ConstructorExample() {
         readonlyIntField = 40;

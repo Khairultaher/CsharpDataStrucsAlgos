@@ -1,15 +1,11 @@
 ﻿using CsharpDataStrucsAlgos;
-using Shouldly;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CsharpDataStrucsAlgosTest;
 
 public class PartialClassTest {
 
     [Fact]
-    public void BinarySearchRecursiveShouldReturnResult() {
+    public void PartialClassInitializationTest() {
         // Arrange
         int expectedNumber = 42;
         string expectedText = "Hello, Partial Class!";
@@ -20,6 +16,6 @@ public class PartialClassTest {
 
         // Assert
         exampleInt._exampleIntField.Equals(expectedNumber);
-        exampleText._exampleTextField.Equals(expectedText);
+          exampleText._exampleTextField.Equals(expectedText);
     }
 }

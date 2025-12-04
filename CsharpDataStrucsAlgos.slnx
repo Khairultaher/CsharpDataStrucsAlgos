@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CsharpDataStrucsAlgos/CsharpDataStrucsAlgos.csproj" />
+  <Project Path="CsharpDataStrucsAlgosTests/CsharpDataStrucsAlgosTest.csproj" />
+</Solution>

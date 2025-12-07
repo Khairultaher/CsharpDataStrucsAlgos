@@ -2,7 +2,7 @@
 using CsharpDataStrucsAlgos.DesignPatterns.Behavioral;
 using Shouldly;
 
-namespace CsharpDataStrucsAlgosTest.DesignPatterns;
+namespace CsharpDataStrucsAlgosTest.DesignPatterns.Behavioral;
 
 public class VisitorTest {
     [Fact]

@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CsharpDataStrucsAlgosTest.DesignPatterns;
+namespace CsharpDataStrucsAlgosTest.DesignPatterns.Behavioral;
 
 public class ObserverTest {
 

@@ -2,7 +2,7 @@
 using CsharpDataStrucsAlgosTest.Helpers;
 using Shouldly;
 
-namespace CsharpDataStrucsAlgosTest.DesignPatterns;
+namespace CsharpDataStrucsAlgosTest.DesignPatterns.Behavioral;
 
 public class MadiatorTest {
     [Fact]

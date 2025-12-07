@@ -1,7 +1,7 @@
-﻿using CsharpDataStrucsAlgos.DesignPatterns;
+﻿using CsharpDataStrucsAlgos.DesignPatterns.Behavioral;
 using Shouldly;
 
-namespace CsharpDataStrucsAlgosTest;
+namespace CsharpDataStrucsAlgosTest.DesignPatterns;
 
 public class CommandPatternTest {
     [Fact]

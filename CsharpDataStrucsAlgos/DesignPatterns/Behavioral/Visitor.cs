@@ -2,7 +2,7 @@
 
 /// <summary>
 /// Intent: Represent an operation to be performed on the elements of an object structure, letting you define a new operation without changing the classes of the elements.
-///Usage in .NET: For operations on a composite object structure(e.g., traversing a document tree and performing reporting or validation).
+/// Usage in .NET: For operations on a composite object structure(e.g., traversing a document tree and performing reporting or validation).
 /// </summary>
 
 // Visitor Interface

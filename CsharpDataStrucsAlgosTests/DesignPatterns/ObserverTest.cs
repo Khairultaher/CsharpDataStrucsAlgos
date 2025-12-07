@@ -1,11 +1,12 @@
 ﻿using CsharpDataStrucsAlgos.DesignPatterns;
+using CsharpDataStrucsAlgos.DesignPatterns.Behavioral;
 using CsharpDataStrucsAlgosTest.Helpers;
 using Shouldly;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CsharpDataStrucsAlgosTest;
+namespace CsharpDataStrucsAlgosTest.DesignPatterns;
 
 public class ObserverTest {
 

@@ -1,15 +1,12 @@
-﻿using CsharpDataStrucsAlgos.DesignPatterns;
+﻿using CsharpDataStrucsAlgos.DesignPatterns.Behavioral;
 using CsharpDataStrucsAlgosTest.Helpers;
 using Shouldly;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace CsharpDataStrucsAlgosTest;
+namespace CsharpDataStrucsAlgosTest.DesignPatterns;
 
 public class MadiatorTest {
     [Fact]
-    public void MadiatorShouldSendMeassgeProperly() { 
+    public void MadiatorShouldSendMeassgeProperly() {
         // Arrange
         var madiator = new ConcreteMediator();
         var colleague1 = new ConcreteColleague1(madiator);

@@ -1,5 +1,11 @@
 ﻿namespace CsharpDataStrucsAlgos.DesignPatterns.Creational;
 
+/// <summary>
+/// Intent: Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+/// Usage in .NET: When building cross-platform UI frameworks(e.g., creating buttons, checkboxes for Windows vs. macOS).
+/// </summary>
+
+
 // Abstract Products
 public interface IButton { void Render(); }
 public interface ICheckbox { void Render(); }

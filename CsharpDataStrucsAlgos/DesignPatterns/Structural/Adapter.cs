@@ -1,8 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace CsharpDataStrucsAlgos.DesignPatterns.Structural;
+
+/// <summary>
+/// Intent: Convert the interface of a class into another interface clients expect.
+/// Usage in .NET: To integrate legacy code or third-party libraries with a new interface.
+/// </summary>
+
 
 // Adaptee (legacy class)
 public class LegacyLogger {

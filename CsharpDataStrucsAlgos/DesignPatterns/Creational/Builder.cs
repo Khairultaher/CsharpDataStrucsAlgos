@@ -1,8 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Reflection.Metadata;
 
 namespace CsharpDataStrucsAlgos.DesignPatterns.Creational;
+
+/// <summary>
+/// Intent: Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+/// Usage in .NET: Building complex objects like configuring a custom query or assembling a document.
+/// </summary>
+
 
 // Product the target object to be built
 public class House {

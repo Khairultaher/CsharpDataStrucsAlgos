@@ -7,6 +7,7 @@ namespace CsharpDataStrucsAlgos;
 public class ConstructorExample: ConstructorBaseExample {
 
     public readonly int intField;
+    public readonly int anotherIntField = 0;
     public static readonly int readonlyIntField;
     public const int constIntField = 100;
     public ConstructorExample() {
@@ -23,6 +24,11 @@ public class ConstructorExample: ConstructorBaseExample {
     public ConstructorExample(int value): base(value) {
 
         intField = value;
+    }
+
+    public ConstructorExample(int value1, int value2) : this(value1) {
+
+        anotherIntField = value2;
     }
 
 }

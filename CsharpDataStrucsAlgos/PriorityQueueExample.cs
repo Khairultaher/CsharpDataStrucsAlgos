@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Text;
-
-namespace CsharpDataStrucsAlgos;
+﻿namespace CsharpDataStrucsAlgos;
 
 internal class MedianFinder {
     PriorityQueue<int, int> small; // Max-heap (inverted min-heap)
     PriorityQueue<int, int> large; // Min-heap
     public MedianFinder() {
-        small = new PriorityQueue<int, int>(Comparer<int>.Create((a,b)=> b.CompareTo(a)));
+        small = new PriorityQueue<int, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
         large = new PriorityQueue<int, int>();
     }
 

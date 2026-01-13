@@ -1,4 +1,4 @@
-﻿namespace CsharpDataStrucsAlgos;
+﻿namespace CsharpDataStrucsAlgos.Educative_99;
 
 public class GreedyTechniques {
     /// <summary>
@@ -81,7 +81,8 @@ public class GreedyTechniques {
         if(startFuel > target)
             return 0;
 
-        PriorityQueue<int, int> maxHeap = new PriorityQueue<int, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
+        PriorityQueue<int, int> maxHeap 
+            = new PriorityQueue<int, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
 
         int i = 0;
         int n = stations.Length;

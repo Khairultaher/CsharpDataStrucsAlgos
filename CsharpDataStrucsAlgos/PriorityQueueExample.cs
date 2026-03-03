@@ -1,9 +1,9 @@
 ﻿namespace CsharpDataStrucsAlgos;
 
-internal class MedianFinder {
+internal class PriorityQueueExample {
     PriorityQueue<int, int> small; // Max-heap (inverted min-heap)
     PriorityQueue<int, int> large; // Min-heap
-    public MedianFinder() {
+    public PriorityQueueExample() {
         small = new PriorityQueue<int, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
         large = new PriorityQueue<int, int>();
     }
@@ -37,4 +37,22 @@ internal class MedianFinder {
         int smallTop = small.Peek();
         return (smallTop + large.Peek()) / 2.0;
     }
+
+    public List<int> FindKLargest(int[] arr, int k) { 
+        PriorityQueue<int, int> minHeap = new PriorityQueue<int, int>();
+        foreach (var num in arr) {
+            minHeap.Enqueue(num, num);
+            if (minHeap.Count > k) {
+                minHeap.Dequeue();
+            }
+        }
+        List<int> result = new List<int>();
+        while (minHeap.Count > 0) {
+            result.Add(minHeap.Dequeue());
+        }
+        result.Reverse();
+        return result;
+    }
 }
+
+

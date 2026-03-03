@@ -1,4 +1,6 @@
-﻿namespace CsharpDataStrucsAlgos;
+﻿using System.Diagnostics;
+
+namespace CsharpDataStrucsAlgos;
 
 internal class TaskThread {
 
@@ -8,10 +10,12 @@ internal class TaskThread {
 
         Task.Run(async () => {
             while (!token.IsCancellationRequested) {
-                Console.WriteLine("Working...");
+                //Console.WriteLine("Working...");
+                Debug.WriteLine("Working...");
                 await Task.Delay(1000);
             }
-            Console.WriteLine("Task Cancelled");
+            //Console.WriteLine("Task Cancelled");
+            Debug.WriteLine("Task Cancelled");
         }, token);
 
         // Cancel after 3 seconds
